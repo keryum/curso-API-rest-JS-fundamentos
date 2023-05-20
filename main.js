@@ -7,6 +7,7 @@ const spanError = document.getElementById('error')
 async function loadRandomMichis() {
     const res = await fetch(API_URL_RANDOM);
     const data = await res.json();
+    
     console.log(data)
     if (res.status !==200) {
         spanError.classList.toggle('inactive')
